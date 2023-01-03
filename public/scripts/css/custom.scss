@@ -1,0 +1,1147 @@
+::-webkit-scrollbar {
+   width: 2px;
+   margin-left: 3px;
+
+   &-track {
+      border-radius: 20px;
+   }
+
+   &-thumb {
+      background: #c2c2c2;
+      border-radius: 50px;
+
+      &:hover {
+         background: #e0e0e0;
+      }
+   }
+}
+
+.gapensi-header {
+   &__user {
+      display: flex;
+      align-items: center;
+
+      &-img {
+         width: 45px;
+         height: auto;
+         border-radius: 5px;
+      }
+
+      &-content {
+         display: block;
+         margin-left: 10px;
+      }
+   }
+
+   &__btn {
+      font-size: 13px;
+
+      &.gapensi-header__btn-dark {
+         background-color: #e2e2e2;
+         color: #353535;
+         &:hover,
+         &:focus {
+            background-color: #242424;
+            color: #ffffff;
+         }
+      }
+
+      &.gapensi-header__btn-light {
+         background-color: #f3f3f3;
+         color: #353535;
+         &:hover,
+         &:focus {
+            background-color: #242424;
+            color: #ffffff;
+         }
+      }
+   }
+}
+
+.user-content {
+   &__title {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: normal;
+      color: #242424;
+      margin-bottom: 0;
+   }
+
+   &__email {
+      font-size: 13px;
+      font-weight: normal;
+      line-height: normal;
+      color: #383838;
+   }
+}
+
+.navbar-light .navbar-nav .nav-link {
+   display: flex;
+   align-items: center;
+   font-size: 22px;
+}
+
+.sidebar {
+   padding: 15px 10px;
+
+   .nav-link {
+      p {
+         font-size: 13px;
+         font-weight: 400;
+         line-height: normal;
+         text-transform: capitalize;
+      }
+   }
+
+   &-dark-primary {
+      background-color: #202661;
+
+      .sidebar {
+         a { color: #ffffff; }
+      }
+
+      .nav-sidebar {
+         &>.nav-item {
+            &>.nav-link {
+               &.active {
+                  background-color: #2f3292;
+                  color: #ffffff;
+               }
+            }
+         }
+      }
+   }
+
+   &-collapse {
+      .nav-sidebar>.nav-item .nav-icon {
+         margin-left: 0;
+         margin-right: 0;
+         transition: all .3s ease-in-out;
+      }
+   }
+}
+
+[class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link {
+   color: #fdfdfd;
+}
+
+.nav-sidebar .nav-item>.nav-link {
+   display: flex;
+   align-items: center;
+}
+
+.layout-navbar-fixed {
+   .wrapper {
+      .sidebar-dark-primary {
+         .brand-link {
+            &:not([class*=navbar]) {
+               background-color: #202661;
+            }
+         }
+      }
+   }
+}
+
+.layout-navbar-fixed .wrapper .main-header {
+   display: flex;
+   justify-content: space-between;
+}
+
+.nav-link {
+   &.nav-link__logo {
+      img {
+         width: auto;
+         height: 30px;
+      }
+   }
+}
+
+.navbar-white {
+   &.navbar-dark--sm {
+      background-color: #212480;
+   }
+}
+
+.navbar-light .navbar-nav .nav-link {
+   color: #ffffff;
+}
+
+.content-header {
+   padding: 20px 10px;
+}
+
+.content-wrapper>.content {
+   padding: 0 10px;
+}
+
+.row {
+   &.row__align-items-center {
+      align-items: center;
+   }
+}
+
+.small-box {
+   p {
+      font-size: 14px;
+      font-weight: 400;
+      text-align: left;
+      margin-bottom: 5px;
+   }
+
+   h3 {
+      font-size: 24px;
+      font-weight: 600;
+      text-align: left;
+      margin-bottom: 0;
+   }
+
+   &>.small-box-footer {
+      font-size: 14px;
+      padding: 10px 0;
+
+      i {
+         margin-left: 5px;
+      }
+   }
+
+   .icon>i.ion {
+      font-size: 55px;
+      top: 15px;
+   }
+
+   .icon>i.fas {
+      font-size: 40px;
+      top: 15px;
+   }
+}
+
+.main-footer {
+   padding: 15px;
+   text-align: center;
+}
+
+.small-box {
+   &.gapensi-card__theme-color {
+      h3 {
+         font-size: 28px;
+         font-weight: 600;
+         text-transform: capitalize;
+         text-align: left;
+      }
+   
+      p {
+         font-size: 13px;
+         text-align: left;
+      }
+   }
+}
+
+.small-box .icon {
+   display: block;
+   color: rgba(255, 255, 255, .8);
+}
+
+.gapensi-card__theme-color {
+   &.theme-color {
+      &--standard {
+         background-color: #2f3292;
+         color: #ffffff;
+      }
+
+      &--red-plum {
+         background-color: #D90005;
+         color: #ffffff;
+      }
+   
+      &--purple {
+         background-color: #A351BB;
+         color: #ffffff;
+      }
+   
+      &--orange {
+         background-color: #EF4507;
+         color: #ffffff;
+      }
+   
+      &--green {
+         background-color: #75C920;
+         color: #ffffff;
+      }
+   
+      &--gray {
+         background-color: #727272;
+         color: #ffffff;
+      }
+   
+      &--golden {
+         background-color: #CE922B;
+         color: #ffffff;
+      }
+   
+      &--dark-navy {
+         background-color: #0C335A;
+         color: #ffffff;
+      }
+   
+      &--blue-sea {
+         background-color: #11688E;
+         color: #ffffff;
+      }
+   }
+}
+
+.btn-group-sm>.btn, .btn-sm {
+   padding: 5px 15px;
+   font-size: 13px;
+}
+
+.row {
+   &.form-group {
+      margin-bottom: 10px;
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+}
+
+.form-group {
+   margin-bottom: 10px;
+   &:last-child {
+      margin-bottom: 0;
+   }
+}
+
+.form-control[readonly] {
+   background-color: #ffffff;
+}
+
+label:not(.form-check-label):not(.custom-file-label) {
+   font-weight: 500;
+}
+
+label {
+   font-size: 13px;
+}
+
+.col-form-label {
+   padding-top: calc(.375rem + 1px);
+   padding-bottom: calc(.375rem + 1px);
+   margin-bottom: 0;
+   font-size: 13px;
+   line-height: normal;
+   align-items: center;
+   display: flex;
+   text-transform: capitalize;
+}
+
+.form-control {
+   font-size: 13px;
+   line-height: normal;
+
+   &.form-control--align-center {
+      display: flex;
+      align-items: center;
+   }
+}
+
+select {
+   &.form-control {
+      padding: .375rem .75rem .375rem .5rem;
+   }
+}
+
+.select2-container--default {
+   .select2-results__option {
+      font-size: 13px;
+      font-weight: normal;
+   }
+
+   .select2-selection--single .select2-selection__rendered {
+      font-size: 13px;
+      font-weight: normal;
+   }
+
+   .select2-dropdown .select2-search__field {
+      font-size: 13px;
+      font-weight: normal;
+   }
+}
+
+.bootstrap-datetimepicker-widget table td,
+.bootstrap-datetimepicker-widget table th {
+   font-size: 13px;
+   font-weight: normal;
+}
+
+.custom-file-label, .custom-file-label:after {
+   display: flex;
+   align-items: center;
+}
+
+p {
+   font-size: 14px;
+   font-weight: 400;
+   line-height: normal;
+   margin-top: 0;
+   margin-bottom: 15px;
+   &:last-child {
+      margin-bottom: 0;
+   }
+}
+
+.gapensi-modal {
+   &__steps {
+      margin-top: 0;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      
+      &:first-child {
+         margin-top: 30px;
+      }
+
+      &:last-child {
+         margin-bottom: 0;
+         border: 0;
+      }
+
+      border-bottom: 1px solid #f3f3f3;
+
+      h6 {
+         font-size: 16px;
+         font-weight: 600;
+         margin-bottom: 0;
+      }
+
+      p {
+         font-size: 13px;
+         color: #4e4e4e;
+      }
+   }
+}
+
+.row-separator__xl {
+   &--left {
+      padding-left: 7.5px;
+   }
+
+   &--right {
+      padding-right: 7.5px;
+   }
+}
+
+.table-head {
+   &--center {
+      th {
+         font-size: 14px;
+         font-weight: 600;
+         line-height: normal;
+         text-align: center;
+      }
+
+      td {
+         font-size: 13px;
+         font-weight: normal;
+         line-height: normal;
+
+         &.txt--center {
+            text-align: center;
+         }
+      }
+   }
+}
+
+.table thead th,
+.table tbody td {
+   vertical-align: middle;
+}
+
+.table-footer {
+   &__pagination {
+      border-top: 1px solid #dee2e6;
+      padding-top: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+   }
+}
+
+.card {
+   box-shadow: rgba(49, 53, 59, 0.12) 0px 1px 6px 0px;
+}
+
+h3.card-title {
+   text-transform: capitalize;
+}
+
+.card-body.p-0 .table tbody>tr>td:first-of-type,
+.card-body.p-0 .table tbody>tr>th:first-of-type,
+.card-body.p-0 .table thead>tr>td:first-of-type,
+.card-body.p-0 .table thead>tr>th:first-of-type {
+   padding-left: .75rem;
+}
+
+.card-footer {
+   background-color: rgba(32, 38, 97, .95);
+}
+
+.callout {
+   border-radius: 8px;
+   box-shadow: rgba(49, 53, 59, 0.12) 0px 1px 6px 0px;
+
+   &.gapensi-callout__data-review {
+      p {
+         font-size: 14px;
+         font-weight: normal;
+         text-transform: capitalize;
+      }
+
+      a {
+         color: #ffffff;
+         text-decoration: none;
+      }
+   }
+}
+
+.product-image-thumb {
+   padding: 5px;
+}
+
+.login-logo {
+   a {
+      img {
+         max-width: 210px;
+         height: auto;
+      }
+   }
+
+   margin-bottom: 15px;
+}
+
+.login-page,
+.register-page {
+   background-color: #2f3292;
+}
+
+label {
+   &.label-title {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 2px;
+      text-transform: capitalize;
+   }
+}
+
+.label-description {
+   font-size: 12px;
+   font-weight: 400;
+   color: #3a3a3a;
+   margin-bottom: 10px;
+}
+
+.col-xl-3,
+.col-lg-3 {
+   &.col-repeat {
+      &:nth-child(1n+5) {
+         margin-top: 15px;
+      }
+   }
+}
+
+h4 {
+   &.modal-title {
+      font-size: 16px;
+      font-weight: 600;
+   }
+}
+
+.modal-header {
+   align-items: center;
+}
+
+.gapensi-img {
+   &__view {
+      &-banner {
+         &--slider {
+            width: 100%;
+            height: 150px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+         }
+
+         &--kotak {
+            width: 100%;
+            height: 175px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+         }
+
+         &--panjang {
+            width: 100%;
+            height: 350px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+         }
+      }
+
+      &-sertifikat {
+         width: 100%;
+         height: 250px;
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+      }
+
+      &-kartu-identitas {
+         width: 100%;
+         height: 150px;
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+      }
+
+      &-photo {
+         width: 100%;
+         height: 200px;
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+      }
+   }
+}
+
+.card {
+   &.gapensi-card__img-view {
+      width: 100%;
+      height: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      flex-shrink: 0;
+      position: relative;
+
+      img {
+         &.logo-square {
+            width: auto;
+            height: 100px;
+         }
+   
+         &.logo-wide {
+            width: auto;
+            height: 50px;
+         } 
+
+         &.logo-empty {
+            width: 120px;
+            height: auto;
+         }
+      }
+   }
+
+   &.card-widget__review-item {
+      margin-bottom: 0;
+      box-shadow: none;
+
+      .card-body {
+         padding: 10px;
+      }
+
+      p {
+         font-size: 13px;
+         line-height: normal;
+         color: #495057;
+      }
+   }
+}
+
+.card.card-widget.card-widget--border {
+   border: 1px solid #d2d2d2;
+   box-shadow: none;
+
+   .card-body {
+      padding: .5rem;
+   }
+}
+
+.input-group-append {
+   .btn {
+      font-size: 13px;
+      font-weight: normal;
+   }
+}
+
+li {
+   &.breadcrumb-item {
+      font-size: 14px;
+      font-weight: 500;
+
+      a {
+         color: #077485;
+      }
+   }
+}
+
+.info-box-number {
+   &.custom {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 5px;
+   }
+}
+
+.info-box-text {
+   &.custom {
+      font-size: 13px;
+      font-weight: normal;
+   }
+}
+
+.btn {
+   &.btn-icon-img {
+      img {
+         width: 18px;
+         height: 18px;
+         margin-right: 5px;
+      }
+
+      span {
+         font-weight: 500;
+      }
+   }
+}
+
+a.btn {
+   &.btn-outline-white {
+      border-color: #ffffff;
+      color: #ffffff;
+      &:hover {
+         background-color: #ffffff;
+         color: #161616;
+      }
+   }
+}
+
+img {
+   &.icon-status {
+      width: 24px;
+      height: 24px;
+
+      &.icon-small {
+         width: 20px;
+         height: 20px;
+      }
+   }
+}
+
+.checkbox__container {
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+   &:last-child {
+      margin-bottom: 0;
+   }
+
+   input {
+      margin-right: 10px;
+   }
+
+   label {
+      margin-bottom: 0;
+   }
+}
+
+.col-form-label {
+   &.text--small {
+      font-size: 12px;
+   }
+}
+
+.width--fit-content {
+   width: fit-content;
+}
+
+.card-info:not(.card-outline)>.card-header,
+.card-info:not(.card-outline)>.card-header a {
+   color: inherit;
+}
+
+.card-header h3 {
+   color: #ffffff;
+}
+
+
+// responsive
+@media (min-width: 480px) {
+   .content-header {
+      padding: 20px 10px;
+   }
+   .content-wrapper>.content {
+      padding: 0 10px;
+   }
+   
+   .main-footer {
+      padding: 15px;
+      text-align: center;
+   }
+
+   .navbar-white {
+      &.navbar-dark--sm {
+         background-color: #212480;
+      }
+   }
+
+   .navbar-light .navbar-nav .nav-link {
+      color: #ffffff;
+   }
+
+   .small-box {
+      p {
+         font-size: 14px;
+         font-weight: 400;
+         margin-bottom: 5px;
+      }
+   
+      h3 {
+         font-size: 24px;
+         font-weight: 600;
+         margin-bottom: 0;
+      }
+   
+      &>.small-box-footer {
+         font-size: 14px;
+         padding: 10px 0;
+   
+         i {
+            margin-left: 5px;
+         }
+      }
+   
+      .icon>i.ion {
+         font-size: 55px;
+         top: 15px;
+      }
+   }
+}
+
+@media (min-width: 576px) {
+   .content-header {
+      padding: 20px 10px;
+   }
+   .content-wrapper>.content {
+      padding: 0 10px;
+   }
+   
+   .main-footer {
+      padding: 15px;
+      text-align: center;
+   }
+
+   .navbar-white {
+      &.navbar-dark--sm {
+         background-color: #212480;
+      }
+   }
+
+   .navbar-light .navbar-nav .nav-link {
+      color: #ffffff;
+   }
+
+   .small-box {
+      p {
+         font-size: 14px;
+         font-weight: 400;
+         margin-bottom: 5px;
+         text-transform: capitalize;
+      }
+   
+      h3 {
+         font-size: 24px;
+         font-weight: 600;
+         margin-bottom: 0;
+         text-transform: capitalize;
+      }
+   
+      &>.small-box-footer {
+         font-size: 14px;
+         padding: 10px 0;
+   
+         i {
+            margin-left: 5px;
+         }
+      }
+   
+      .icon>i.fas {
+         font-size: 44px;
+         top: 15px;
+         &:hover {
+            font-size: 62px;
+         }
+      }
+   }
+}
+
+@media (min-width: 768px) {
+   .navbar-white {
+      &.navbar-dark--sm {
+         background-color: #212480;
+      }
+   }
+
+   .navbar-light .navbar-nav .nav-link {
+      color: #ffffff;
+   }
+
+   .main-footer {
+      padding: 20px;
+      text-align: left;
+   }
+}
+
+@media (min-width: 992px) {
+   ::-webkit-scrollbar {
+      width: 5px;
+      margin-left: 3px;
+   
+      &-track {
+         border-radius: 20px;
+      }
+   
+      &-thumb {
+         background: #c2c2c2;
+         border-radius: 50px;
+   
+         &:hover {
+            background: #e0e0e0;
+         }
+      }
+   }
+
+   [class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link {
+      color: #fdfdfd;
+      padding-left: 42px;
+   }
+
+   .content-header {
+      padding: 15px;
+   }
+   .content-wrapper>.content {
+      padding: 0 15px;
+   }
+   
+   .main-footer {
+      padding: 20px;
+      text-align: left;
+   }
+
+   .navbar-white {
+      &.navbar-dark--sm {
+         background-color:#ffffff;
+      }
+   }
+
+   .navbar-light .navbar-nav .nav-link {
+      color: rgba(0, 0, 0, 0.9);
+   }
+
+   .navbar-nav__logo {
+      display: none;
+   }
+
+   .small-box {
+      p {
+         font-size: 13px;
+         font-weight: 400;
+         margin-bottom: 5px;
+      }
+   
+      h3 {
+         font-size: 27px;
+         font-weight: 600;
+         margin-bottom: 5px;
+      }
+   
+      &>.small-box-footer {
+         font-size: 13px;
+         padding: 10px 0;
+   
+         i {
+            margin-left: 5px;
+         }
+      }
+   
+      .icon>i.ion {
+         font-size: 55px;
+         top: 15px;
+      }
+   }
+
+   .small-box {
+      &.gapensi-card__theme-color {
+         h3 {
+            font-size: 24px;
+         }
+      
+         p {
+            font-size: 12px;
+         }
+      }
+   }
+
+   .gapensi-modal {
+      &__steps {
+         margin-top: 0;
+         margin-bottom: 15px;
+         &:first-child {
+            margin-top: 0;
+         }
+
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+
+   .row-separator__xl {
+      &--left {
+         padding-left: 20px;
+      }
+   
+      &--right {
+         padding-right: 20px;
+      }
+   }
+}
+
+@media (min-width: 1200px) {
+   ::-webkit-scrollbar {
+      width: 5px;
+      margin-left: 3px;
+   
+      &-track {
+         border-radius: 20px;
+      }
+   
+      &-thumb {
+         background: #c2c2c2;
+         border-radius: 50px;
+   
+         &:hover {
+            background: #e0e0e0;
+         }
+      }
+   }
+
+   [class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link {
+      color: #fdfdfd;
+      padding-left: 42px;
+   }
+
+   .content-header {
+      padding: 15px;
+   }
+   .content-wrapper>.content {
+      padding: 0 15px;
+   }
+   
+   .main-footer {
+      padding: 15px 20px;
+      text-align: left;
+   }
+
+   .navbar-white {
+      &.navbar-dark--sm {
+         background-color:#ffffff;
+      }
+   }
+
+   .navbar-light .navbar-nav .nav-link {
+      color: rgba(0, 0, 0, 0.9);
+   }
+
+   .navbar-nav__logo {
+      display: none;
+   }
+
+   .small-box {
+      p {
+         font-size: 13px;
+         font-weight: 400;
+         margin-bottom: 5px;
+      }
+   
+      h3 {
+         font-size: 27px;
+         font-weight: 600;
+         margin-bottom: 5px;
+      }
+   
+      &>.small-box-footer {
+         font-size: 13px;
+         padding: 10px 0;
+   
+         i {
+            margin-left: 5px;
+         }
+      }
+   
+      .icon>i.ion {
+         font-size: 55px;
+         top: 15px;
+      }
+   }
+
+   .small-box {
+      &.gapensi-card__theme-color {
+         h3 {
+            font-size: 24px;
+         }
+      
+         p {
+            font-size: 12px;
+         }
+      }
+   }
+
+   .gapensi-modal {
+      &__steps {
+         margin-top: 0;
+         margin-bottom: 15px;
+
+         &:first-child {
+            margin-top: 0;
+         }
+
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+
+   .row-separator__xl {
+      &--left {
+         padding-left: 20px;
+      }
+   
+      &--right {
+         padding-right: 20px;
+      }
+   }
+}
+
+@media (max-width:575.98px) {
+   .content-header h1 {
+      font-size: 20px;
+   }
+
+   .card-title {
+      font-size: 14px;
+   }
+
+   li.breadcrumb-item {
+      font-size: 13px;
+   }
+}
